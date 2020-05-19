@@ -1,0 +1,73 @@
+mcf:
+    version: 1.0
+
+metadata:
+    language: en
+    language_alternate: it
+    charset: utf8
+    hierarchylevel: dataset
+    datestamp: 2016-12-02
+    dataseturi: https://github.com/afrigeri/planetary-geospatial-metadata
+spatial:
+    datatype: grid
+    geomtype: surface
+    crs: 4326
+    bbox: 0,-60,360,60
+
+identification:
+    language: eng;
+    charset: utf8
+    title_en: The GIS data of the spectral parameter maps of Vesta from NASA/Dawn VIR mapping spectrometer
+    title_fr: title in French
+    abstract_en: The 4 global maps of pyroxene-related spectral parameters derived from data coming from the VIR mapping spectrometer onboard NASA/Dawn acqusition campaing at Vesta
+    dates:
+        creation: 2016-12-02
+        publication: 2016-12-02T00:00:00Z
+    keywords:
+        default:
+            keywords_en: [Spectral parameters,Global Map,Vesta]
+        wmo:
+            keywords_en: [FOO,BAR]
+            keywords_type: theme
+        gc_cst:
+            keywords_en: [kw1,kw2]
+            keywords_fr: [kw1,kw2]
+    topiccategory:
+        - planetaryScience
+    fees: None
+    accessconstraints: otherRestrictions
+    rights_en: Copyright (c) 2016 Istituto Nazionale di Astrofisica
+    url: https://doi.org/10.7910/DVN/JJJL6R
+    temporal_begin: 
+    temporal_end: now
+    status: onGoing
+    maintenancefrequency: continual
+
+contact:
+    main: &contact_main
+        organization: Istituto Nazionale di Astrofisica
+        url: https://www.ec.gc.ca/
+        individualname: Alessandro Frigeri
+        positionname: Research Scientist
+        phone: +39-6-43394227
+        fax: +01-123-456-7890
+        address: via del Fosso del Cavaliere, 100
+        city: Rome
+        administrativearea: Rome
+        postalcode: 00185
+        country: Italy
+        email: alessandro.frigeri@inaf.it
+        contactinstructions: email
+
+    distribution: *contact_main
+
+distribution:
+
+    wms:
+        url: https://dd.meteo.gc.ca
+        type: OGC:WMS
+        name_en: roads
+        name_fr: routes
+        description_en: description in English
+        description_fr: description in French
+        function: download
