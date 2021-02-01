@@ -1,0 +1,102 @@
+mcf:
+    version: 1.0
+
+metadata:
+    identifier:
+    language: en
+    language_alternate: it
+    charset: utf8
+    parentidentifier:
+    hierarchylevel: dataset
+    datestamp: 2021-02-01
+    dataseturi: https://github.com/afrigeri/planetary-geospatial-metadata/metadata/OxiaPlanum
+spatial:
+    datatype: grid
+    geomtype: surface
+
+identification:
+    language: eng;
+    charset: utf8
+    title_en: CTX mosaic of Oxia Planum at Mars
+    abstract_en: CTX image mosaic of Oxia Planum, prepared for the study of the
+      landing site of ESA's ExoMars2022 rover Rosalind Franklin.
+      CTX stereo DTM and orthorectified mosaic made using USGS ISIS and BAE Systems SocetSet.
+      DTM = 20 m/px
+      Orthoimage = 6 m/px
+      CTX stereo pairs used
+      J01_045167_1983 & J03_045800_1983
+      F03_037070_1980 & F03_037136_1977
+      J01_045101_1981 & J02_045378_1981
+      F23_044811_1985 & F23_044956_1984
+      F21_044178_1988 & J05_046723_1985
+      J14_050138_1986 & K05_055518_1986
+
+      CTX images courtesy of NASA/JPL/Malin Space Science Systems
+
+      Made by Peter Grindrod at The Natural History Museum, London
+
+      Georeferenceded to HRSC MC11 west mosaic tile HMC_11W24_nd5 http://hrscteam.dlr.de/HMC30/ and rectifed using the spline transformation.
+
+      The spline transformation is a true rubber sheeting method and optimizes for local accuracy but not global accuracy.
+      http://desktop.arcgis.com/en/arcmap/10.3/manage-data/raster-and-images/fundamentals-for-georeferencing-a-raster-dataset.htm
+
+      25m contours created from 100m/pixel DTM, contours shorter than 1500m long removed, lines smoothed useing PAEK with tolorence of 200m
+      100m contours exported to new shapefile
+
+      Georeferencing and Contours by Peter Fawdon, The Open University, MiltonKeynes, (peter.fawdon@open.ac.uk)
+    dates:
+        creation: 2020-12-01
+
+    extents:
+        spatial:
+            - bbox: [-141,42,-52,84]
+              crs: IAU:10000
+    keywords:
+        default:
+            keywords_en: [CTX,Image mosaic]
+    topiccategory:
+        - planetaryScience
+    fees: None
+    accessconstraints: otherRestrictions
+    rights_en: Copyright (c) Who produced the mosaic
+    url:
+    temporal_begin:
+    temporal_end: now
+    status: onGoing
+    maintenancefrequency: continual
+
+contact:
+    main: &contact_main
+        organization: University of Lyon
+        url:
+        individualname: Matthieu Volat
+        positionname: Research Scientist
+        phone:
+        fax:
+        address:
+        city: Lyon
+        administrativearea: Lyon
+        postalcode:
+        country: France
+        email:
+        contactinstructions: email
+    distribution: *contact_main
+
+distribution:
+    waf:
+        url: https://
+        type: WWW:LINK
+        name: my waf
+        description_en: description in English
+        description_fr: description in French
+        function: download
+
+    wms:
+        url: https://wms_service.esa.int
+        type: OGC:WMS
+        name_en: oxia_planum_ctx
+        name_fr: oxia_planum_ctx
+        name_it: oxia_planum_ctx
+        description_en: description in English
+        description_fr: description in French
+        function: download

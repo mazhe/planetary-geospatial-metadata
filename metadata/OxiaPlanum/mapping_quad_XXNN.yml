@@ -1,0 +1,77 @@
+mcf:
+    version: 1.0
+
+metadata:
+    identifier: 
+    language: en
+    language_alternate: it
+    charset: utf8
+    parentidentifier: 
+    hierarchylevel: dataset
+    datestamp: 2020-01-01
+    dataseturi: https://github.com/afrigeri/planetary-geospatial-metadata/metadata/OxiaPlanum
+spatial:
+    datatype: grid
+    geomtype: surface
+
+identification:
+    language: eng;
+    charset: utf8
+    title_en: Morphostratigraphic mapping of Oxia, quad XX
+    abstract_en: Whithin this quad we have mapped two different terrain.  A dark terrain is evident in the north-west sector of the quadrangle while a brighter one occurs everywhere else.  The contact between the terrains is sharp.  From the topography the dark terrain seems to overlay the bright one. 
+
+    extents:
+        spatial:
+            - bbox: [-141,42,-52,84]
+              crs: IAU:10000
+    
+    dates:
+        creation: 2020-12-01
+    keywords:
+        default:
+            keywords_en: [OxiaPlanum,mapping,dark terrain,bright terrain,contact]
+    topiccategory:
+        - planetaryScience
+    fees: None
+    accessconstraints: otherRestrictions
+    rights_en: Copyright (c) 2020 
+    url: 
+    temporal_begin: 
+    temporal_end: now
+    status: onGoing
+    maintenancefrequency: continual
+
+contact:
+    main: &contact_main
+        organization: IAPS INAD
+        url: 
+        individualname: Alessandro Frigeri
+        positionname: Research Scientist
+        phone: 
+        fax: 
+        address: 
+        city: Rome
+        administrativearea: Rome
+        postalcode: 00133
+        country: Italy
+        email: 
+        contactinstructions: email
+    distribution: *contact_main
+
+distribution:
+    waf:
+        url: https://dd.meteo.gc.ca
+        type: WWW:LINK
+        name: my waf
+        description_en: description in English
+        description_fr: description in French
+        function: download
+
+    wms:
+        url: https://dd.meteo.gc.ca
+        type: OGC:WMS
+        name_en: roads
+        name_fr: routes
+        description_en: description in English
+        description_fr: description in French
+        function: download
