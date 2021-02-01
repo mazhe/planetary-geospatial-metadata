@@ -5,7 +5,7 @@ Geospatial metadata to make planetary data iteroperable and discoverable.
 
 
 
-##  Application to Oxia Planum morpho-stratigraphic mapping / ExoMars2022
+###  Application to Oxia Planum morpho-stratigraphic mapping / ExoMars2022
 
 Oxia Planum mapping exercise.  
 
