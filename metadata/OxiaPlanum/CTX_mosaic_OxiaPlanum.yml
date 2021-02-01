@@ -67,17 +67,17 @@ identification:
 
 contact:
     main: &contact_main
-        organization: University of Lyon
+        organization: The Natural History Museum, London
         url:
-        individualname: Matthieu Volat
+        individualname: Made by Peter Grindrod 
         positionname: Research Scientist
         phone:
         fax:
         address:
-        city: Lyon
-        administrativearea: Lyon
+        city: London
+        administrativearea: 
         postalcode:
-        country: France
+        country: UK
         email:
         contactinstructions: email
     distribution: *contact_main
@@ -88,7 +88,6 @@ distribution:
         type: WWW:LINK
         name: my waf
         description_en: description in English
-        description_fr: description in French
         function: download
 
     wms:
@@ -98,5 +97,4 @@ distribution:
         name_fr: oxia_planum_ctx
         name_it: oxia_planum_ctx
         description_en: description in English
-        description_fr: description in French
         function: download
