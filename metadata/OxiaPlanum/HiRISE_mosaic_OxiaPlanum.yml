@@ -13,8 +13,6 @@ metadata:
 spatial:
     datatype: grid
     geomtype: surface
-    crs: 4326
-    bbox: 0,-60,360,60
 
 identification:
     language: eng;
@@ -24,6 +22,12 @@ identification:
     
     dates:
         creation: 2020-12-01
+
+    extents:
+        spatial:
+            - bbox: [-141,42,-52,84]
+              crs: 4326
+
     keywords:
         default:
             keywords_en: [HiRISE,Image mosaic]
@@ -57,18 +61,18 @@ contact:
 
 distribution:
     waf:
-        url: https://dd.meteo.gc.ca
+        url: https://server_at.esa.int
         type: WWW:LINK
-        name: my waf
-        description_en: description in English
+        name: HiRISE_at_Esa_Web_Accessible_Folder
+        description_en: Here goes the brief description of the dataset.
         description_fr: description in French
         function: download
 
     wms:
-        url: https://dd.meteo.gc.ca
+        url: https://specialized_mapserver.esa.int
         type: OGC:WMS
-        name_en: roads
-        name_fr: routes
+        name_en: Here goes the name of the dataset.
+        name_fr: ... in french
         description_en: description in English
         description_fr: description in French
         function: download
