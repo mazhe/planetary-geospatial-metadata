@@ -1,0 +1,78 @@
+mcf:
+    version: 1.0
+
+metadata:
+    identifier: 
+    language: en
+    language_alternate: it
+    charset: utf8
+    parentidentifier: 
+    hierarchylevel: dataset
+    datestamp: 2020-01-01
+    dataseturi: https://github.com/afrigeri/planetary-geospatial-metadata/metadata/OxiaPlanum
+spatial:
+    datatype: grid
+    geomtype: surface
+
+identification:
+    language: eng;
+    charset: utf8
+    title_en: CTX DEM mosaic of Oxia Planum at Mars 
+    abstract_en: This is the CTX mosaic of Oxia Planum, prepared for the study of the landing site of ESA's ExoMars rover Rosalind Franklin.
+    
+    dates:
+        creation: 2020-12-01
+
+    extents:
+        spatial:
+            - bbox: [-141,42,-52,84]
+              crs: 4326
+
+    keywords:
+        default:
+            keywords_en: [CTX,DEM mosaic]
+    topiccategory:
+        - planetaryScience
+    fees: None
+    accessconstraints: otherRestrictions
+    rights_en: Copyright (c) 2020 University of Lyon/NASA/ESA
+    url: 
+    temporal_begin: 
+    temporal_end: now
+    status: onGoing
+    maintenancefrequency: continual
+
+contact:
+    main: &contact_main
+        organization: CNRS/University of Lyon
+        url: 
+        individualname: Matthieu Volat
+        positionname: Engineer
+        phone: 
+        fax: 
+        address: 2 rue Raphael Dubois
+        city: Villeurbanne
+        administrativearea: Villeurbanne
+        postalcode: 69622
+        country: France
+        email: matthieu.volat@univ-lyon1.fr
+        contactinstructions:
+    distribution: *contact_main
+
+distribution:
+    waf:
+        url: https://server_at.esa.int
+        type: WWW:LINK
+        name: CTX_at_Esa_Web_Accessible_Folder
+        description_en: Here goes the brief description of the dataset.
+        description_fr: description in French
+        function: download
+
+    wms:
+        url: https://specialized_mapserver.esa.int
+        type: OGC:WMS
+        name_en: Here goes the name of the dataset.
+        name_fr: ... in french
+        description_en: description in English
+        description_fr: description in French
+        function: download
