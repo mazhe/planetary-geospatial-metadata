@@ -17,7 +17,7 @@ spatial:
 identification:
     language: eng;
     charset: utf8
-    title_en: HiRISE mosaic of Oxia Planum at Mars 
+    title_en: HiRISE DEM and orthorectified images mosaic of Oxia Planum at Mars 
     abstract_en: This is the HiRISE mosaic of Oxia Planum, prepared for the study of the landing site of ESA's ExoMars rover Rosalind Franklin.
     
     dates:
@@ -30,7 +30,7 @@ identification:
 
     keywords:
         default:
-            keywords_en: [HiRISE,Image mosaic]
+            keywords_en: [HiRISE,DEM mosaic,Image mosaic]
     topiccategory:
         - planetaryScience
     fees: None
@@ -44,19 +44,19 @@ identification:
 
 contact:
     main: &contact_main
-        organization: University of Lyon
+        organization: CNRS/University of Lyon
         url: 
         individualname: Matthieu Volat
-        positionname: Research Scientist
+        positionname: Engineer
         phone: 
         fax: 
-        address: 
-        city: Lyon
-        administrativearea: Lyon
-        postalcode: 
+        address: 2 rue Raphael Dubois
+        city: Villeurbanne
+        administrativearea: Villeurbanne
+        postalcode: 69622
         country: France
-        email: 
-        contactinstructions: email
+        email: matthieu.volat@univ-lyon1.fr
+        contactinstructions:
     distribution: *contact_main
 
 distribution:
